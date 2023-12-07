@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="noteColor1">#FD9393</color>
+    <color name="noteColor3">#B8FD95</color>
+    <color name="noteColor4">#FDEE9C</color>
+    <color name="noteColor5">#5797F8</color>
+    <color name="noteColor6">#F18FFA</color>
+
+    <color name="purple">#7180FA</color>
+
+    <color name="my_primary">#48D9FD</color>
+
+    <color name="textColor">#000000</color>
+    <color name="textColorProfile">#FFFCFC</color>
+</resources>

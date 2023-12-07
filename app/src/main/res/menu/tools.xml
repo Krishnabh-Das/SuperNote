@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/summarize_tool"
+        android:title="Summarize"
+        android:icon="@drawable/baseline_summarize_24"/>
+    <item android:id="@+id/yt_tool"
+        android:title="Youtube Notes"
+        android:icon="@drawable/baseline_youtube_searched_for_24"/>
+</menu>

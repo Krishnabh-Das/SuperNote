@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dim_6"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="@dimen/dim_6"
+    app:cardCornerRadius="@dimen/dim_20"
+    app:cardElevation="1dp"
+    android:transitionName="shared_element_transition">
+
+    <LinearLayout
+        android:id="@+id/rv_list_xml"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_background"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/share_button"
+            android:layout_width="62dp"
+            android:layout_height="22dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/design_pop"
+            android:text="Share  ➕"
+            android:textSize="10sp"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginTop="@dimen/dim_5"
+            android:layout_marginRight="@dimen/dim_15"
+            android:fontFamily="@font/bebas"
+            android:padding="@dimen/dim_8"
+            android:singleLine="true"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_24"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_15"
+            android:fontFamily="@font/cooper_medium_b"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="10"
+            android:paddingHorizontal="@dimen/dim_8"
+            android:paddingTop="@dimen/dim_3"
+            android:paddingBottom="@dimen/dim_12"
+            android:text="Note"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_15" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_15"
+            android:layout_marginBottom="@dimen/dim_15"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="10"
+            android:padding="@dimen/dim_8"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Date"
+            android:textAlignment="textEnd"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/font_size_12" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginTop="-14dp"
+            android:layout_marginRight="@dimen/dim_15">
+
+            <ImageView
+                android:id="@+id/sender_email"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_email"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_email_24" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="abc@gmail.com"
+                android:textColor="@color/textColor"
+                android:paddingRight="@dimen/dim_8"
+                android:textAlignment="viewEnd"
+                android:layout_marginBottom="15dp"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
